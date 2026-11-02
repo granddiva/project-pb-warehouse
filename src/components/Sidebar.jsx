@@ -97,19 +97,6 @@ export default function Sidebar({ currentView, setCurrentView, currentUser, onPr
           <span>Lokasi Rak & Box Arsip</span>
         </button>
 
-        <div className="nav-category">Sesi Akun</div>
-
-        <button
-          type="button"
-          className="nav-link"
-          style={{ color: '#f87171' }}
-          onClick={handleLogoutClick}
-        >
-          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
-          </svg>
-          <span>Keluar / Logout</span>
-        </button>
       </nav>
 
       <div className="sidebar-footer">
@@ -144,6 +131,18 @@ export default function Sidebar({ currentView, setCurrentView, currentUser, onPr
             </svg>
           </button>
         </div>
+
+        <button
+          type="button"
+          className="nav-link"
+          style={{ color: '#f87171', width: '100%', marginTop: '8px' }}
+          onClick={handleLogoutClick}
+        >
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
+          </svg>
+          <span>Keluar / Logout</span>
+        </button>
       </div>
     </aside>
   );
